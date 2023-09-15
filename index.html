@@ -61,7 +61,7 @@ onload= function(){
               </p>
               <p>I am a Ph.D. candidate in the <a href="https://ame.usc.edu/">Department of Aerospace and Mechanical Engineering</a> at <a href="https://www.usc.edu/">University of Southern California, Los Angeles</a>. I work at the <a href="https://sites.usc.edu/quann/">Dynamic Robotics and Control Laboratory</a> and am fortunate to be advised by Prof. <a href="https://ame.usc.edu/directory/faculty/profile/?lname=Nguyen&fname=Quan">Quan Nguyen</a>. I obtained my M.S. degrees from University of Southern California (USA) and Gwangju Institute of Science and Technology (South Korea).
               </p>
-              <p> I am honored to receive Viterbi Fellowship and AME Department Fellowship from USC. I am fortunate to collaborate with Prof. <a href="https://natanaso.github.io/"> Nikolay Atanasov</a> at University of California San Diego, and Dr. Guillaume Bellegarda (incoming professor at University of Wisconsin–Madison )
+              <p> I am honored to receive Viterbi Fellowship and AME Department Fellowship from USC. I am fortunate to collaborate with Prof. <a href="https://natanaso.github.io/"> Nikolay Atanasov</a> (UC San Diego), and Dr. Guillaume Bellegarda (EPFL, Switzerland)
               </p>
               <p style="text-align:center">
                 <a href="mailto:vanchuong.nguyen@usc.edu">Email</a> &nbsp/&nbsp
@@ -166,20 +166,21 @@ onload= function(){
                  <p> <center> Trajectory tracking + learned dynamics</center></p>
             </td>
             <td style="padding:20px;width:80%;vertical-align:middle">
-              <a href="https://thaipduong.github.io/SE3HamDL/">
-                  <papertitle>Hamiltonian-based Neural ODE Networks on the SE(3) Manifold For Dynamics Learning and Control</papertitle>
+<!--              <a href="https://thaipduong.github.io/SE3HamDL/">-->
+              <a href="https://www.youtube.com/watch?v=d7RcWEXTbqc&feature=youtu.be">
+                  <papertitle>Contact-timing and Trajectory Optimization for 3D Jumping on Quadruped Robots</papertitle>
               </a>
               <br>
-              <strong>Thai Duong</strong>,
-              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <strong>Chuong Nguyen</strong>,
+              <a href="https://sites.usc.edu/quann/">Quan Nguyen</a>
               <br>
-              <em>Robotics: Science and Systems (RSS)</em>, 2021.
+              <em>IROS </em>, 2022.
               <br>
-              <a href="https://thaipduong.github.io/SE3HamDL/">website</a> /
-              <a href="https://thaipduong.github.io/SE3HamDL/">video</a> /
-              <a href="https://arxiv.org/abs/2106.12782">arXiv</a>
+<!--              <a href="https://thaipduong.github.io/SE3HamDL/">website</a> /-->
+              <a href="https://www.youtube.com/watch?v=d7RcWEXTbqc&feature=youtu.be">video</a> /
+              <a href="https://arxiv.org/pdf/2110.06764.pdf">arXiv</a>
               <p></p>
-              <p>The dynamics of many robots, including ground, aerial, and underwater vehicles, are described in terms of their SE(3) pose and generalized velocity, and satisfy conservation of energy principles. This paper proposes a Hamiltonian formulation over the SE(3) manifold of the structure of a neural ordinary differential equation (ODE) network to approximate the dynamics of a rigid body. In contrast to a black-box ODE network, our formulation guarantees total energy conservation by construction. We develop energy shaping and damping injection control for the learned, potentially underactuated SE(3) Hamiltonian dynamics to enable a unified approach for stabiliziation and trajectory tracking with various platforms, including pendulum, rigid-body, and quadrotor systems.</p>
+              <p>Performing highly agile acrobatic motions with a long flight phase requires perfect timing, high accuracy, and coordination of the full-body motion. To address these challenges, we present a novel approach on timings and trajectory optimization framework for legged robots performing aggressive 3D jumping. In our method, we firstly utilize an effective optimization framework using simplified rigid body dynamics to solve for contact timings and a reference trajectory of the robot body. The solution of this module is then used to formulate a full-body trajectory optimization based on the full nonlinear dynamics of the robot. This combination allows us to effectively optimize for contact timings while ensuring that the jumping trajectory can be effectively realized in the robot hardware. We first validate the efficiency of the proposed framework on the A1 robot model for various 3D jumping tasks such as double-backflips off the high altitude of 2m. Experimental validation was then successfully conducted for various aggressive 3D jumping motions such as diagonal jumps, barrel roll, and double barrel roll from a box of heights 0.4m and 0.9m, respectively.</p>
                 <img src='images/se3hamdl/gif/data2.gif' width="180">
                 <img src='images/se3hamdl/gif/data11.gif' width="180">
                 <img src='images/se3hamdl/gif/data15.gif' width="180">
