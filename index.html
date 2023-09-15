@@ -270,21 +270,40 @@ perturbations and model uncertainty on the robot dynamics.</p>
                 </video>
             </td>
             <td style="padding:20px;width:80%;vertical-align:middle">
-              <a href="https://thaipduong.github.io/sbkm/">
-                  <papertitle>Autonomous Navigation in Unknown Environments with Sparse <i style="color:green">Bayesian</i> Kernel-based Occupancy Mapping</papertitle>
+              <a href="https://www.youtube.com/watch?v=cihIFsPvy-Y">
+                  <papertitle>Robust Quadruped Jumping via Deep Reinforcement Learning</papertitle>
               </a>
               <br>
-              <strong>Thai Duong</strong>,
-              <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>,
-              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <a href="https://scholar.google.co.kr/citations?user=YDimn5wAAAAJ&hl=en">Guillaume Bellegarda* </a>,
+                <strong>Chuong Nguyen *</strong>
+              <a href="https://natanaso.github.io/">Quan Nguyen</a>
               <br>
-              <em>Accepted to IEEE Transactions on Robotics (T-RO)</em>, 2022
+              <em>Submitted to Robotics and Autonomous Systems Journal (RAS), 2023. *Equal contribution</em>,
               <br>
-              <a href="https://thaipduong.github.io/sbkm/">website</a> /
-              <a href="https://youtu.be/rJ5N3jJlrGE">video</a> /
-              <a href="https://arxiv.org/abs/2009.07207">arXiv</a>
+<!--              <a href="https://thaipduong.github.io/sbkm/">website</a> /-->
+              <a href="https://www.youtube.com/watch?v=cihIFsPvy-Y">video</a> /
+              <a href="https://arxiv.org/pdf/2011.07089.pdf">arXiv</a>
               <p></p>
-              <p>This paper focuses on online occupancy mapping and real-time collision checking onboard an autonomous robot navigating in a large unknown environment. We develop a probabilistic formulation based on Relevance Vector Machines, allowing probabilistic occupancy classification and supporting autonomous navigation. We provide an online training algorithm, updating the sparse Bayesian map incrementally from streaming range data, and an efficient collision-checking method for general curves, representing potential robot trajectories.</p>
+              <p> In this paper, we consider a general task of
+jumping varying distances and heights for a quadrupedal robot
+in noisy environments, such as off of uneven terrain and with
+variable robot dynamics parameters. To accurately jump in such
+conditions, we propose a framework using deep reinforcement
+learning that leverages and augments the complex solution of
+nonlinear trajectory optimization for quadrupedal jumping.
+While the standalone optimization limits jumping to take-off from
+flat ground and requires accurate assumptions of robot dynamics,
+our proposed approach improves the robustness to allow jumping
+off of significantly uneven terrain with variable robot dynamical
+parameters and environmental conditions. Compared with
+walking and running, the realization of aggressive jumping on
+hardware necessitates accounting for the motors’ torque-speed
+relationship as well as the robot’s total power limits. By
+incorporating these constraints into our learning framework, we
+successfully deploy our policy sim-to-real without further tuning,
+fully exploiting the available onboard power supply and motors.
+We demonstrate robustness to environment noise of foot disturbances of up to 6 cm in height, or 33% of the robot’s nominal
+standing height, while jumping 2x the body length in distance.</p>
             <img src='images/sbkm/demo.gif' width="550">
             </td>
           </tr>
