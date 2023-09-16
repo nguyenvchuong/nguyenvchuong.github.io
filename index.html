@@ -196,11 +196,13 @@ onload= function(){
 
              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
              <td style="padding:20px;width:30%;vertical-align:top">
-              <img src='images/3djump/gif/barrel_roll/double-roll-normal-speed.gif' width="220">
+              <img src='images/continuous_jump/Introduction.png' width="220">
+                 <img src='images/continuous_jump/random_distance_crop.gif' width="220">
+                 <img src='images/continuous_jump/unknown_mass_crop.gif' width="220">
 <!--               <br>-->
 <!--                 <img src='images/3djump/gif/double_flip/double_backflip_v2.gif' width="220">-->
 <!--                 <br>-->
-                 <p> <center> The <i style="color:green">first double barrel roll</i>  achieved by A1 robot</center></p>
+<!--                 <p> <center> The <i style="color:green">first double barrel roll</i>  achieved by A1 robot</center></p>-->
             </td>
             <td style="padding:20px;width:80%;vertical-align:middle">
 <!--              <a href="https://thaipduong.github.io/SE3HamDL/">-->
@@ -232,8 +234,9 @@ stepping stones. Thanks to the incorporation of MPC as a
 real-time feedback controller, the proposed framework is also
 validated to be robust to uneven platforms with unknown height
 perturbations and model uncertainty on the robot dynamics.</p>
-<!--                <img src='images/se3hamdl/gif/data2.gif' width="180">-->
-<!--                <img src='images/se3hamdl/gif/data11.gif' width="180">-->
+<!--                <img src='images/continuous_jump/random_distance.gif' width="580">-->
+                <img src='images/continuous_jump/random_height_distance.gif' width="580">
+<!--                <img src='images/continuous_jump/unknown_mass.gif' width="580">-->
 <!--                <img src='images/se3hamdl/gif/data15.gif' width="180">-->
 <!--                <br>-->
 <!--                <img src='images/se3hamdl/gif/data14.gif' width="180">-->
@@ -245,8 +248,6 @@ perturbations and model uncertainty on the robot dynamics.</p>
 
           </tbody></table>
 
-          
-          
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
                 <td style="padding:10px;width:100%;vertical-align:middle">
@@ -256,18 +257,16 @@ perturbations and model uncertainty on the robot dynamics.</p>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <td style="padding:20px;width:30%;vertical-align:top">
+                <img src='images/drl/Introduction.png' width="220">
               <video  width="220" muted autoplay loop>
-                <source src="images/sbkm/sbkm_mapping.mp4" type="video/mp4">
+                <source src="images/drl/d70_h10.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
               <video  width="220" muted autoplay loop>
-                <source src="images/sbkm/sbkm_vid3.mp4" type="video/mp4">
+                <source src="images/drl/d60_h20.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
-              <video  width="220" muted autoplay loop>
-                <source src="images/sbkm/sbkm_map.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+                <p> <center> <i style="color:green">Robustness</i>  to environment noise of foot disturbances</center></p>
             </td>
             <td style="padding:20px;width:80%;vertical-align:middle">
               <a href="https://www.youtube.com/watch?v=cihIFsPvy-Y">
@@ -276,7 +275,7 @@ perturbations and model uncertainty on the robot dynamics.</p>
               <br>
               <a href="https://scholar.google.co.kr/citations?user=YDimn5wAAAAJ&hl=en">Guillaume Bellegarda*</a>,
                 <strong>Chuong Nguyen*</strong>, and
-              <a href="https://natanaso.github.io/">Quan Nguyen</a>
+              <a href="https://sites.usc.edu/quann/">Quan Nguyen</a>
               <br>
               <em>Submitted to Robotics and Autonomous Systems Journal (RAS), 2023. *Equal contribution</em>,
               <br>
@@ -304,38 +303,48 @@ successfully deploy our policy sim-to-real without further tuning,
 fully exploiting the available onboard power supply and motors.
 We demonstrate robustness to environment noise of foot disturbances of up to 6 cm in height, or 33% of the robot’s nominal
 standing height, while jumping 2x the body length in distance.</p>
-            <img src='images/sbkm/demo.gif' width="550">
+            <img src='images/drl/framework.png' width="580">
             </td>
           </tr>
 
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
            <td style="padding:20px;width:30%;vertical-align:top">
+               <img src='images/ilc/Introduction.png' width="220">
               <video  width="220" muted autoplay loop>
-                <source src="images/skm/skm_vid3.mp4" type="video/mp4">
+                <source src="images/ilc/d50h30_from40cmmemory.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
-              <video  width="220" muted autoplay loop>
-                <source src="images/skm/skm_map3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+<!--              <video  width="220" muted autoplay loop>-->
+<!--                <source src="images/skm/skm_map3.mp4" type="video/mp4">-->
+<!--                Your browser does not support the video tag.-->
+<!--                </video>-->
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://thaipduong.github.io/kernelbasedmap/">
-                <papertitle>Autonomous Navigation in Unknown Environments using Sparse Kernel-based Occupancy Mapping</papertitle>
+                <papertitle>Multiple Targets Jumping on Quadruped Robot with Iterative Learning</papertitle>
               </a>
               <br>
-              <strong>Thai Duong</strong>,
-              <a href="https://www.ucsdarclab.com/people">Nikhil Das</a>,
-              <a href="https://yip.eng.ucsd.edu/">Michael Yip</a>,
-              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <strong>Chuong Nguyen*</strong>, Lingfan Bao*,
+              <a href="https://sites.usc.edu/quann/">Quan Nguyen</a>
               <br>
-              <em>International Conference on Robotics and Automation (ICRA)</em>, 2020
+              <em>Submitted to International Journal on Robotic Research (IJRR), 2023. *Equal contribution</em>
               <br>
-              <a href="https://thaipduong.github.io/kernelbasedmap/">website</a> /
-              <a href="https://youtu.be/FY_qDmXIaQE">video</a> /
-              <a href="https://arxiv.org/abs/2002.01921">arXiv</a>
+<!--              <a href="https://thaipduong.github.io/kernelbasedmap/">website</a> /-->
+<!--              <a href="https://youtu.be/FY_qDmXIaQE">video</a> /-->
+<!--              <a href="https://arxiv.org/abs/2002.01921">arXiv</a>-->
               <p></p>
-              <p>We propose a new map representation, in which occupied and free space are separated by the decision boundary of a kernel perceptron classifier. We develop an online training algorithm that maintains a very sparse set of support vectors to represent obstacle boundaries in configuration space. We also derive conditions that allow complete (without sampling) collision-checking for piecewise-linear and piecewise-polynomial robot trajectories.</p>
+              <p> The realization of highly dynamic jumping on legged robot to particular targets at high accuracy is a challenging task.
+This inaccurate transfer normally comes from uncertainties and unknown dynamics involved in contact dynamics and
+hardware model. In this paper, we are inspired by nature of practice make perfect on human and animal jumping to
+propose a framework based on iterative learning control to address this challenging problem. Our approach allows the
+robot to apply what it learns from a simple jumping task to accomplish multiple complex tasks within a few trails directly
+in hardware. In addition, the iterative learning can be efficiently formulated as Quadratic Programs (QP), enabling fast
+solving time of less than 1 second for each trail. We validate the method via extensive experiments in A1 model and
+hardware for various jumping tasks. From a simple short jump (e.g. forward 40cm), our learning approach enables
+robot to achieve multiple challenging targets such as jumping on high box of 20cm, jumping farther to 60cm, as well
+as jumping while carrying an unknown mass of 2kg. Our method enables the robot to reach desired position and
+orientation targets with the approximate errors of 1cm and 1 degree, respectively. </p>
+                <img src='images/ilc/framework_v3.png' width="580">
             </td>
           </tr>
           </tbody></table>
